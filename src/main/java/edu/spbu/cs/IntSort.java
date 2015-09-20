@@ -8,9 +8,15 @@ import java.util.List;
  * Created by artemaliev on 07/09/15.
  */
 public class IntSort {
-  public static void sort (int a[]) {
+  public static void sort (int array[]) {
     //Arrays.sort(array);
+    mergeSort(array);
+  }
 
+  public static void sort (List<Integer> list) {
+    Collections.sort(list);
+  }
+   private static int[] mergeSort(int[] a) {
         if (a.length > 1) {
             int left = a.length / 2;
             int right = a.length - left;
@@ -36,12 +42,7 @@ public class IntSort {
                 n++;
             }
         }
-
+        return a;
     }
-
-  }
-
-  public static void sort (List<Integer> list) {
-    Collections.sort(list);
-  }
+}
 }
