@@ -10,7 +10,7 @@ import java.util.List;
 public class IntSort {
   public static void sort (int array[]) {
     //Arrays.sort(array);
-    mergeSort(array);
+    mergeSort(array)
   }
 
   public static void sort (List<Integer> list) {
@@ -44,5 +44,4 @@ public class IntSort {
         }
         return a;
     }
-}
 }
